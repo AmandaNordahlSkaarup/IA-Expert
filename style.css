@@ -1,8 +1,81 @@
-/*
-Theme name: oneline-lite
-Description: oneline-lite child theme
-Author: Amanda Skaarup
-Template: oneline-lite
-Version: 1.0.0
-Text domain: oneline-lite child
+/* 
+Theme Name:		 child of oblique
+Theme URI:		 http://childtheme-generator.com/
+Description:	 child of oblique is a child theme of Oblique, created by ChildTheme-Generator.com
+Author:			 Amanda
+Author URI:		 http://childtheme-generator.com/
+Template:		 oblique
+Version:		 1.0.0
+Text Domain:	 child-of-oblique
 */
+
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+
+/*
+    Add your custom styles here
+*/
+
+/***** Background *****/
+
+div#page.hfeed.site {
+	background:#bae0e2;
+}
+
+.svg-block {
+	fill: #bae0e2 !important;
+}
+
+/***** Image Round *****/
+
+.wp-block-image img {
+	border-radius: 50%;
+    width: 250px;
+}
+
+.sidebar-toggle {
+     display:none;
+}
+
+h2 {
+	margin-top:40px;
+	margin-bottom:30px;
+}
+
+body {
+	font-family: 'Slabo 27px', serif;
+	font-size: 20px;
+}
+
+.search-form {
+	display:none !important;
+}
+
+
+
+/***** A TO BTN DESIGN *****/
+
+a.btn {
+	display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	background-color:#e4f9fa;
+}
+
+a.btn:hover {
+	background-color:#8dbcbf;
+    color: white;
+}
