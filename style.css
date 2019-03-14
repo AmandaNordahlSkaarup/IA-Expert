@@ -16,8 +16,8 @@ Text Domain:	 child-of-oblique
 body {
 	font-family: 'Slabo 27px', serif;
 	font-size: 20px;
+	background-image: linear-gradient(#6bb0ff, #a1ccfc);
 }
-
 
 /*
 header#masthead .svg-block, div.nav-svg path {
@@ -39,21 +39,26 @@ div#page.hfeed.site {
 /***** BACKGROUND - GRADIENT *****/
 
 div#page.hfeed.site {
-	background-image: linear-gradient(#6bb0ff, #a1ccfc);
+	/*background-image: linear-gradient(#6bb0ff, #a1ccfc);*/
+	/*background-color:#6bb0ff;*/
+	background-color:#3091c9;
 }
 
 .svg-container.nav-svg.svg-block {
-	fill:#6bb0ff;
+	fill:#3091c9;
 }
 
 .svg-container.header-svg.svg-block {
-	fill:#76b6fe;
+	fill:#3091c9;
 }
 
 .overlay {
 	background: none;
 }
 
+.footer-svg.svg-block {
+	display:none;
+}
 
 /***** HEADER *****/
 
@@ -63,6 +68,16 @@ div#page.hfeed.site {
 
 .header-search {
 	margin-top:15px;
+}
+
+img.logo {
+	float:left;
+	width:35%;
+	padding-top:12.5px;
+}
+
+.topbar {
+	background-color:#6bb0ff !important;
 }
 
 /***** CONTENT/MAIN  *****/
@@ -85,10 +100,14 @@ article#post-7 {
 	display:none;
 }
 
+.site-content {
+	margin-bottom:0 !important;
+}
+
 /***** FOOTER *****/
 
-footer#colophon, .footer-svg.svg-block {
-	display:none
+.col-xs-12.col-md-6.site-info {
+	display:none;
 }
 
 /***** A TO BTN DESIGN *****/
