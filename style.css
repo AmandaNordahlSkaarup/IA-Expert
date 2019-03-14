@@ -11,50 +11,89 @@ Text Domain:	 child-of-oblique
 
 @import url('https://fonts.googleapis.com/css?family=Slabo+27px');
 
-/*
-    Add your custom styles here
-*/
-
-/***** Background *****/
-
-div#page.hfeed.site {
-	background:#bae0e2;
-}
-
-.svg-block {
-	fill: #bae0e2 !important;
-}
-
-/***** Image Round *****/
-
-.wp-block-image img {
-	border-radius: 50%;
-    width: 250px;
-}
-
-.sidebar-toggle {
-     display:none;
-}
-
-h2 {
-	margin-top:40px;
-	margin-bottom:30px;
-}
+/***** GENEREL *****/
 
 body {
 	font-family: 'Slabo 27px', serif;
 	font-size: 20px;
 }
 
-.search-form {
-	display:none !important;
+
+/*
+header#masthead .svg-block, div.nav-svg path {
+	fill: #bae0e2 !important;
+} */
+
+h2 {
+	margin-top:40px;
+	margin-bottom:30px;
+}
+
+/***** BACKGROUND - SINGLE COLOR *****/
+
+/*
+div#page.hfeed.site {
+	background:#bae0e2;
+} */
+
+/***** BACKGROUND - GRADIENT *****/
+
+div#page.hfeed.site {
+	background-image: linear-gradient(#6bb0ff, #a1ccfc);
+}
+
+.svg-container.nav-svg.svg-block {
+	fill:#6bb0ff;
+}
+
+.svg-container.header-svg.svg-block {
+	fill:#76b6fe;
+}
+
+.overlay {
+	background: none;
 }
 
 
+/***** HEADER *****/
+
+.search-form, .sidebar-toggle  {
+	display:none !important;
+}
+
+.header-search {
+	margin-top:15px;
+}
+
+/***** CONTENT/MAIN  *****/
+
+article#post-7 {
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	margin-bottom:125px;
+}
+/*
+.svg-container.single-post-svg.single-svg-bottom.svg-block, .svg-container.footer-svg.svg-block {
+	display:none;
+} */
+
+.wp-block-image img {
+	border-radius: 50%;
+    width: 250px;
+}
+
+.single-svg-bottom.svg-block {
+	display:none;
+}
+
+/***** FOOTER *****/
+
+footer#colophon, .footer-svg.svg-block {
+	display:none
+}
 
 /***** A TO BTN DESIGN *****/
 
-a.btn {
+a.btn, a.btn:active, a.btn:focus {
 	display: inline-block;
     margin-bottom: 0;
     font-weight: normal;
@@ -72,10 +111,11 @@ a.btn {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-	background-color:#e4f9fa;
+	background-color:#499eff;
+	color:white;
 }
 
 a.btn:hover {
-	background-color:#8dbcbf;
+	background-color:#87c9ff;
     color: white;
 }
